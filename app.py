@@ -1,3 +1,6 @@
+# Instalar "pip install flask"
+# instalar "pip install mysql-connector-python"
+
 from flask import Flask, render_template, request, redirect, url_for
 import mysql.connector
 
