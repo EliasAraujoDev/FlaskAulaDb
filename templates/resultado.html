@@ -15,13 +15,15 @@
             </tr>
         </thead>
         <tbody>
-            {% for cliente in clientess %}
+            {% for cliente in clientes %}
             <tr>
                 <td>{{ cliente[1] }}</td>
                 <td>{{ cliente[2] }}</td>
+                <td><a href="{{url_for('atualizar', id=cliente[0])}}">atualizar</a></td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
+    <button><a href="{{url_for('index')}}">Voltar</a></button>  
 </body>
 </html>
